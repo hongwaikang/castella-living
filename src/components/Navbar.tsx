@@ -46,7 +46,7 @@ export default function Navbar() {
                   <Link href="/products/day-curtains" className="block text-gray-800 hover:text-black">Day Curtains</Link>
                   <Link href="/products/unislat" className="block text-gray-800 hover:text-black">Unislat Curtains</Link>
                 </div>
-                <div className="mt-4">
+                <div className="pt-4 border-t mt-4">
                   <h4 className="font-semibold text-sm text-gray-500 mb-1">Blinds</h4>
                   <Link href="/products/korean-blinds" className="block text-gray-800 hover:text-black">Korean/Combi Blinds</Link>
                   <Link href="/products/shangrila" className="block text-gray-800 hover:text-black">Shangri-La Blinds</Link>
