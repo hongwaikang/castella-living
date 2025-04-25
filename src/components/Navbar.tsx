@@ -57,12 +57,9 @@ export default function Navbar() {
                   <Link href="/products/vertical" className="block text-gray-800 hover:text-black">Vertical Blinds</Link>
                 </div>
                 <div className="pt-4 border-t mt-4">
-                  <Link href="/products/wall-panels" className="block font-medium text-gray-800 hover:text-black mt-2">
-                    Wall Panels
-                  </Link>
-                  <Link href="/products/carpentry" className="block font-medium text-gray-800 hover:text-black">
-                    Carpentry
-                  </Link>
+                  <h4 className="font-semibold text-sm text-gray-500 mb-1">Wall Panels</h4>
+                  <Link href="/products/wall-panels/flat" className="block text-gray-800 hover:text-black">BPC Flat Panel</Link>
+                  <Link href="/products/wall-panels/fluted" className="block text-gray-800 hover:text-black">BPC Fluted Wall Panel</Link>
                 </div>
               </div>
             )}
@@ -86,6 +83,7 @@ export default function Navbar() {
             )}
           </div>
 
+          <Link href="/about" className="text-gray-600 hover:text-black">Carpentry</Link>
           <Link href="/contact" className="text-gray-600 hover:text-black">Contact Us</Link>
 
           {/* WhatsApp CTA */}
