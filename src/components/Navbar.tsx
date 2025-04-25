@@ -65,25 +65,8 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Services Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => handleHover("services")}
-            onMouseLeave={() => handleHover(null)}
-          >
-            <button className="text-gray-600 hover:text-black flex items-center gap-1">
-              Services ▼
-            </button>
-            {hoveredMenu === "services" && (
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white border shadow-lg rounded-lg p-4 space-y-2 z-50">
-                <Link href="/services/installation" className="block text-gray-800 hover:text-black">Installation</Link>
-                <Link href="/services/measurement" className="block text-gray-800 hover:text-black">Site Measurement</Link>
-                <Link href="/services/consultation" className="block text-gray-800 hover:text-black">Free Consultation</Link>
-              </div>
-            )}
-          </div>
-
-          <Link href="/about" className="text-gray-600 hover:text-black">Carpentry</Link>
+          <Link href="/services" className="text-gray-600 hover:text-black">Services</Link>
+          <Link href="/carpentry" className="text-gray-600 hover:text-black">Carpentry</Link>
           <Link href="/contact" className="text-gray-600 hover:text-black">Contact Us</Link>
 
           {/* WhatsApp CTA */}
