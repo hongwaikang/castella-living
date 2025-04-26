@@ -1,67 +1,73 @@
 export default function AboutPage() {
     return (
       <main className="bg-white text-gray-900">
-        <div className="max-w-6xl mx-auto px-6 py-20">
-          {/* Heading */}
-          <div className="text-center mb-16">
-            <h1 className="text-4xl font-extrabold mb-4">About Castella Living</h1>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We believe that beautiful interiors start with thoughtful details. Castella Living offers premium curtains, blinds, wall panels, and bespoke carpentry — combining elegance with practicality.
+  
+        {/* Hero Section with neutral background */}
+        <section className="w-full h-[60vh] bg-stone-100 flex items-center justify-center text-center px-6 mb-16">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">About Castella Living</h1>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Beautiful interiors begin with thoughtful details. Discover premium curtains, blinds, wall panels, and bespoke carpentry crafted with care.
             </p>
           </div>
+        </section>
+  
+        <div className="max-w-6xl mx-auto px-6">
   
           {/* Who We Are */}
           <section className="mb-20">
-            <div className="border-l-4 border-green-500 pl-6">
-              <h2 className="text-2xl font-semibold mb-3">Who We Are</h2>
+            <div className="border-l-4 border-gray-300 pl-6">
+              <h2 className="text-2xl font-semibold mb-2">Who We Are</h2>
+              <p className="text-gray-500 text-sm mb-4">Passionate creators of tailored, livable spaces in Singapore.</p>
               <p className="text-gray-700 leading-relaxed">
-                Founded in Singapore, Castella Living is dedicated to crafting inspiring spaces for homes and businesses. Our curated collection of products is handpicked to reflect timeless style and impeccable quality.
+                Founded in Singapore, Castella Living is dedicated to crafting inspiring spaces for homes and businesses. Our curated collection reflects timeless style and impeccable quality.
               </p>
             </div>
           </section>
   
           {/* Divider */}
-          <hr className="my-12 border-gray-300" />
+          <div className="border-t border-gray-200 my-16"></div>
   
           {/* Mission */}
-          <section className="mb-20">
+          <section className="mb-20 bg-gray-50 py-16 px-6 rounded-xl shadow-sm">
             <div className="text-center">
-              <h2 className="text-2xl font-semibold mb-3">Our Mission</h2>
+              <h2 className="text-2xl font-semibold mb-2">Our Mission</h2>
+              <p className="text-gray-500 text-sm mb-4">Blending beauty, function, and comfort in every space.</p>
               <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                To enhance every environment with thoughtful design, premium materials, and a consultative customer experience — delivering not just products, but comfort and inspiration.
+                To enhance every environment with thoughtful design, premium materials, and a consultative experience — delivering not just products, but lifestyle inspiration.
               </p>
             </div>
           </section>
   
           {/* Divider */}
-          <hr className="my-12 border-gray-300" />
+          <div className="border-t border-gray-200 my-16"></div>
   
-          {/* Values / What Sets Us Apart */}
+          {/* What Sets Us Apart */}
           <section className="mb-20">
             <h2 className="text-2xl font-semibold text-center mb-10">What Sets Us Apart</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
                 <h3 className="text-xl font-semibold mb-2">Curated Selection</h3>
                 <p className="text-gray-600 text-sm">
-                  Fabrics, materials, and designs handpicked to balance beauty, functionality, and longevity.
+                  Handpicked fabrics and materials, blending aesthetics with durability.
                 </p>
               </div>
               <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
                 <h3 className="text-xl font-semibold mb-2">Personalized Consultations</h3>
                 <p className="text-gray-600 text-sm">
-                  Our team visits your space, provides tailored advice, and helps you visualize possibilities on-site.
+                  Tailored advice and on-site visualization to bring your vision to life.
                 </p>
               </div>
               <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
                 <h3 className="text-xl font-semibold mb-2">End-to-End Service</h3>
                 <p className="text-gray-600 text-sm">
-                  From initial measurement to final installation, we manage every detail to ensure a seamless experience.
+                  Full project management from measurements to seamless installation.
                 </p>
               </div>
               <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition">
                 <h3 className="text-xl font-semibold mb-2">Workmanship Guarantee</h3>
                 <p className="text-gray-600 text-sm">
-                  We stand behind our installations with a workmanship warranty — because your satisfaction is our reputation.
+                  Confidence backed by our commitment to quality craftsmanship.
                 </p>
               </div>
             </div>
