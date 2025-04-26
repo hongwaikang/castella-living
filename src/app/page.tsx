@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
-import ServiceCard from "@/components/ServiceCard";
 
 export default function Home() {
   return (
     <main className="bg-white text-gray-800">
+      
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center bg-gray-100">
         <Image
@@ -33,17 +33,18 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-6">Why Castella Living?</h2>
-        <p className="text-center text-gray-600 max-w-3xl mx-auto">
-          At Castella Living, we transform spaces with beautifully tailored window furnishings and interior accents.
-          Our expert team specializes in modern curtains, blinds, wall panels, and bespoke carpentry, crafted with style
-          and function in mind.
+      <section className="max-w-6xl mx-auto px-4 py-20 text-center">
+        <h2 className="text-3xl font-bold mb-6">Why Castella Living?</h2>
+        <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+          At Castella Living, we transform spaces with beautifully tailored window furnishings and custom interior accents.
+          Our expert team specializes in modern curtains, stylish blinds, elegant wall panels, and bespoke carpentry —
+          crafted to blend function and style seamlessly into your home.
         </p>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-10">Featured Products</h2>
+      {/* Featured Products */}
+      <section className="max-w-6xl mx-auto px-4 py-20">
+        <h2 className="text-3xl font-bold text-center mb-12">Featured Products</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProductCard
             title="Curtains"
@@ -58,53 +59,71 @@ export default function Home() {
           <ProductCard
             title="Wall Panels"
             image="/products/wallpanels.jpg"
-            link="/services"
+            link="/products"
           />
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-10">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ServiceCard
-            title="Custom Carpentry"
-            image="/services/carpentry.jpg"
-            description="Tailor-made carpentry solutions including feature walls, built-ins, and custom furniture."
-          />
-          <ServiceCard
-            title="Wall Paneling"
-            image="/services/wallpanels.jpg"
-            description="Add texture and depth to your interiors with elegant wall panel designs."
-          />
-          <ServiceCard
-            title="Professional Installation"
-            image="/services/installation.jpg"
-            description="Reliable, on-time installations of curtains, blinds, and panels by our expert team."
-          />
+      {/* Services Teaser Section */}
+      <section className="py-20 bg-gray-50 text-center px-6">
+        <h2 className="text-3xl font-bold mb-6">Beyond Products — Full Service Experience</h2>
+        <p className="text-gray-600 max-w-3xl mx-auto text-lg mb-8">
+          From complimentary consultations to professional installation,
+          Castella Living ensures every product fits your space perfectly.
+        </p>
+        <Link
+          href="/services"
+          className="inline-block px-8 py-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition"
+        >
+          Explore Our Services
+        </Link>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-12">What Our Clients Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+
+            <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+              <p className="text-gray-700 mb-4">"Castella Living completely transformed our living room. The curtains fit perfectly and the service was amazing!"</p>
+              <h4 className="font-semibold text-gray-900">— Sarah T.</h4>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+              <p className="text-gray-700 mb-4">"Professional advice, premium quality, and beautiful installation. Highly recommend them!"</p>
+              <h4 className="font-semibold text-gray-900">— James L.</h4>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+              <p className="text-gray-700 mb-4">"The team made the process so easy from start to finish. Thank you Castella Living!"</p>
+              <h4 className="font-semibold text-gray-900">— Melissa K.</h4>
+            </div>
+
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gray-100 py-16">
+      {/* Final CTA Section */}
+      <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Space?</h2>
-          <p className="text-gray-600 mb-6">
-            Get in touch for a free consultation on curtains, blinds, wall panels, or carpentry. We're happy to help you design a home you'll love.
+          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Home?</h2>
+          <p className="text-gray-600 mb-8 text-lg">
+            Reach out for a free consultation and let's bring your dream space to life — beautifully and effortlessly.
           </p>
 
           <div className="flex justify-center flex-wrap gap-4">
             <a
-              href="https://wa.me/6591234567" // Replace with your real number
+              href="https://wa.me/6591234567"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 transition"
+              className="px-8 py-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-medium"
             >
               WhatsApp Us
             </a>
             <Link
               href="/contact"
-              className="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-lg shadow hover:bg-gray-50 transition"
+              className="px-8 py-4 bg-white border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition font-medium"
             >
               Contact Form
             </Link>
